@@ -13,7 +13,7 @@ applyVarClus(dataset, sw.metrics, VarClus.threshold)
 A function that automates the process of collecting non-correlated metrics after the application of varclus.
 }
 \examples{
-applyVarClus() 
+applyVarClus()
 }
 \keyword{output}
 \keyword{sw.metrics,}
