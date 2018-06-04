@@ -19,9 +19,9 @@ CollectFNFP <- function(MSD)
     FN[i] <- sum(class == 0 & scored.class == 1)/nrow(data[[i]]); 
     FP[i] <- sum(class == 1 & scored.class == 0)/nrow(data[[i]]); 
     
-    MSDx <- data.frame(Labels = "Non-defective Modules mislabelled as Defective", Percentage = Non-defective Modules mislabelled as Defective[i]);
+    MSDx <- data.frame(Labels = "Mislabelled Non-defective Modules", Percentage = FN[i]);
     MSD <- rbind(MSD, MSDx); 
-    MSDx <- data.frame(Labels = "Actual defective modules mislabelled as non-defective", Percentage = Actual defective modules mislabelled as non-defective[i]); 
+    MSDx <- data.frame(Labels = "Actual Defective Modules Mislabelled", Percentage = FP[i]); 
     MSD <- rbind(MSD, MSDx); }
   return(MSD)
 }
